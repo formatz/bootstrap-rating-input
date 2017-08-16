@@ -43,10 +43,11 @@
 
   function createRatingEl($input, options) {
     // Inline option
+    var $ratingEl;
     if (options.inline) {
-      var $ratingEl = $('<span class="rating-input"></span>');
+      $ratingEl = $('<span class="rating-input"></span>');
     } else {
-      var $ratingEl = $('<div class="rating-input"></div>');
+      $ratingEl = $('<div class="rating-input"></div>');
     }
 
     // Copy original classes but the rating class
@@ -108,7 +109,7 @@
         if (this.options.clearableRemain) {
           $el.find(clearSelector).removeClass(hiddenClass);
         } else {
-          if (!value || value == this.options['empty-value']) {
+          if (!value || value === this.options['empty-value']) {
             $el.find(clearSelector).addClass(hiddenClass);
           } else {
             $el.find(clearSelector).removeClass(hiddenClass);
@@ -119,7 +120,7 @@
 
     updateInput: function(value) {
       var $input = this.$input;
-      if ($input.val() != value) {
+      if ($input.val() !== value) {
         $input.val(value).change();
       }
     }

@@ -1,9 +1,13 @@
 {
   "name": "bootstrap-rating-input",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "license": "MIT",
-  "repository": "https://github.com/javiertoledo/bootstrap-rating-input.git",
+  "repository": "https://github.com/formatz/bootstrap-rating-input.git",
   "main": "src/bootstrap-rating-input.js",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7"
+  },
   "devDependencies": {
     "grunt": "^0.4.2",
     "grunt-contrib-uglify": "0.2.6",
